@@ -3,10 +3,7 @@ import child_process, { ChildProcess } from "child_process";
 import { DataConectionProtocols } from "../protocols/DataConectionProtocols";
 import {CallBackError , Callback, TSMessage, JavaMessage} from "../types"
 import SyBaseConnTsLog from "./SyBaseConnTsLog";
-import { pipeline, Readable, Writable } from "stream";
-import { promisify } from "util";
-
-const pipelineAsync = promisify(pipeline)
+import { Writable } from "stream";
 
 class SyBaseConnTsBase {
     connected: boolean;
